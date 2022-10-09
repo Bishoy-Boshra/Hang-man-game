@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HangMan Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="game-info">
+        <div class="game-name"> HangMan </div>
+        <div class="category">Word From <span></span>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="hangman-draw">
+          <div class="the-draw">
+            <div class="the-stand"></div>
+            <div class="the-hang"></div>
+            <div class="the-rope"></div>
+            <div class="the-man">
+              <div class="head"></div>
+              <div class="body"></div>
+              <div class="hands"></div>
+              <div class="legs"></div>
+            </div>
+          </div>
+        </div>
+        <div class="letters"></div>
+      </div>
+      <hr>
+      <div class="letters-guess"></div>
+    </div>
+    <div class="game-over">
+      <div class="massage">GAME OVER <span></span> <button>Try Again</button></div>
+    </div>
+    <div class="win">
+      <div class="massage">YOU WIN <button>Play Again</button></div>
+    </div>
+
+    <audio src="./sound/correct-answer-hint-accept-5-SBA-300462161-preview_قص الصوت.mp3" preload="auto"
+      id="correct"></audio>
+    <audio src="./sound/invalid-selection-39351_قص الصوت.mp3" preload="auto" id="fail"></audio>
+    <audio src="./sound/level-complete-ring-magical-sparkle-SBA-300420665-preview_قص الصوت.mp3" preload="auto"
+      id="win"></audio>
+    <audio src="./sound/wahwahwahwaaaahahahahahaha-94669.mp3" preload="auto" id="Game-over-sound"></audio>
+    <script src="main.js"></script>
+  </body>
+
+</html>
